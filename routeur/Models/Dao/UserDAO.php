@@ -49,7 +49,7 @@ class UserDAO extends DaO
         $user = $this->create([
             'pk' => $data['pk'],
             'username' => $data['username'],
-            'password' =>$data['password'],
+            'password' =>password_hash($data['password'], PASSWORD_DEFAULT),
             'created_at' => null,
             'updated_at' => null
         ]);

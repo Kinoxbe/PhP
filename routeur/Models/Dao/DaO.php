@@ -40,6 +40,18 @@ abstract class DaO
         }
     }
 
+    function fetchlogin($username){
+        try{
+            $statement = $this->connection->prepare("SELECT * FROM {$this->table} WHERE username = ?");
+            $statement->execute([$username]);
+            $result= $statement->fetch(PDO::FETCH_ASSOC);
+
+            return $this->create($result);
+        } catch (PDOException $e){
+            print $e->getMessage();
+        }
+    }
+
     function fetch($pk){
         try{
             $statement = $this->connection->prepare("SELECT * FROM {$this->table} WHERE pk = ?");

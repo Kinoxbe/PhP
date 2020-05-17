@@ -71,9 +71,9 @@ class UserPageView {
         return ob_get_clean();
     }
 
-    function generateOne($product) {
+    function generateOne($user) {
         ob_start();
-        include 'Views/templates/uniqueuser_view.php';
+        include 'Views/templates/login.php';
         return ob_get_clean();
     }
 

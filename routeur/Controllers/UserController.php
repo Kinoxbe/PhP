@@ -31,6 +31,12 @@ class UserController
         }
 
 
+        if ($post && (isset($post['userlogin'])) && $route == 'login') {
+            $this->displaylogin($_POST['userlogin']);
+        }
+
+
+
         if ($get && $get['pk']) {
             $this->displayOne($get['pk']);
         } else {
@@ -66,6 +72,10 @@ class UserController
 
 
     //display
+
+    function displaylogin($username){
+        echo $this->view->displayPage($this->daouser->fetchlogin($username));
+    }
 
     function displayOne($pk)
     {

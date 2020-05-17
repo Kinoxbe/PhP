@@ -67,41 +67,4 @@
     </table>
 
 
-<!--<table id="user-list" style="display: none">-->
-<!--    <tr>-->
-<!--        <th>UserName</th>-->
-<!--        <th>Password</th>-->
-<!--    </tr>-->
-<!--    --><?php //foreach ($user_list as $user): ?>
-<!--        <form action="/routeur/index/usersave" method="POST">-->
-<!--            <tr>-->
-<!---->
-<!--                <td>-->
-<!--                    <span  class="editablename">--><?//= $user->__get('username'); ?><!--</span>-->
-<!--                    <input class="editableNameStyle" type="texte" name="editableusername" style="display:none " value=""/>-->
-<!--                </td>-->
-<!--                <td>-->
-<!--                    <span  class="editableprice">--><?//= $user->__get('password'); ?><!--</span>-->
-<!--                    <input class="editablePriceStyle" type="text" name="editablepassword" style="display:none " value=""/>-->
-<!--                </td>-->
-<!---->
-<!--                <td>-->
-<!--                    <input type="submit" class="editValues" value="EDIT">-->
-<!--                    <input name="edituserpk" type="hidden" value="--><?//= $user->__get('pk'); ?><!--">-->
-<!--                    <button class='save' name="usersave" type='submit' style="display: none">SAVE</button>-->
-<!--        </form>-->
-<!--                    <button class='cancel' type='button' style="display: none" >CANCEL</button>-->
-<!--                </td>-->
-<!---->
-<!--        <form action="/routeur/index/userdelete" method="POST">-->
-<!--                <td>-->
-<!--                    <input type="submit" name="userdelete" value="DELETE">-->
-<!--                    <input name="deluserpk" type="hidden" value="--><?//= $user->__get('pk'); ?><!--">-->
-<!--                </td>-->
-<!--         </form>-->
-<!--        </tr>-->
-<!---->
-<!--    --><?php //endforeach; ?>
-<!--</table>-->
-
 
